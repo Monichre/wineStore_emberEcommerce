@@ -1,0 +1,20 @@
+
+
+<div class=" wine">
+  <div class="product">
+    <div class="product-background">
+      <img src="/images/grape-floater.png" alt="" />
+      <img class="bottle"src="/images/bottle2.png" height="200" alt="" />
+      <div class="product-content">
+        <p>~{{product.title}}~</p>
+        <!-- <p>{{product.image}}</p> -->
+        <p>{{product.description}}</p>
+        <p>$ {{product.cost}}</p>
+
+      </div>
+
+    </div>
+    <a href="#" {{action 'addToCart' product}}><img src="/images/cart.png" height="50" width="50" alt="" /></a>
+  </div>
+
+</div>

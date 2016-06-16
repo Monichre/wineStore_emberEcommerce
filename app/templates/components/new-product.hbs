@@ -1,0 +1,25 @@
+<div class="newProduct">
+  {{#if newProductForm}}
+  <form id="newProductForm">
+    <div class="form-group">
+      <label for="title">Product name:</label><br>
+      {{input value=title id="title"}}
+    </div>
+    <div class="form-group">
+      <label for="image">Photo:</label><br>
+      {{input value=image id="image"}}
+    </div>
+    <div class="form-group">
+      <label for="description">Description:</label><br>
+      {{input value=description id="description"}}
+    </div>
+    <div class="form-group">
+      <label for="cost">Price</label><br>
+      {{input value=cost id="cost"}}
+    </div>
+    <button {{action 'saveProduct'}}>Add this product</button>
+  </form>
+  {{else}}
+    <button {{action 'addNewProduct'}}>Add this product</button>
+  {{/if}}
+</div>

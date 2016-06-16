@@ -1,0 +1,16 @@
+
+
+<div id="store">
+  <div class="store-background">
+    <div class="row row2">
+      {{#each model as |product|}}
+        {{product-tile product=product}}
+      {{/each}}
+    </div>
+  </div>
+  <div id="shoppingCart">
+    <h1>Shopping Cart:</h1>
+    {{display-cart}}
+  </div>
+
+</div>

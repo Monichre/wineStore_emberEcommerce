@@ -1,0 +1,15 @@
+{{#if foundProduct}}
+<form>
+  <p>{{foundProduct.title}}: {{input type='text' value=foundProduct.title}}</p>
+  <p>{{foundProduct.image}}: {{input type='text' value=foundProduct.image}}</p>
+  <p>{{foundProduct.description}}: {{input type='text' value=foundProduct.description}}</p>
+  <p>{{foundProduct.cost}}: {{input type='text' value=foundProduct.cost}}</p>
+  <button {{action 'updateProduct' foundProduct}}>Update Product</button>
+</form>
+{{else}}
+  <form>
+    <label for="name">Product Name</label><br>
+    {{input value=name id="productName"}}<br>
+    <button {{action 'findProduct' products}}>Find Product</button>
+  </form>
+{{/if}}

@@ -1,0 +1,17 @@
+{ "products": [{
+    "title": "Veruca Salt",
+    "description": "Estate",
+    "cost": 15,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg"
+  }, {
+    "title": "Mike Teavee",
+    "description": "Condo",
+    "cost": 1,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Alfonso_13_Highrise_Tegucigalpa.jpg"
+  }, {
+    "title": "Violet Beauregarde",
+    "description": "Apartment",
+    "cost": 3,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg"
+  }]
+}

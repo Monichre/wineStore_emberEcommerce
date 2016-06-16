@@ -1,0 +1,30 @@
+
+<div class="container">
+
+
+      <div class="jumbotron">
+        <h1>Admin Dashboard</h1>
+        <p class="lead">If you are not an Admin or have been routed here by mistake please sign out.</p>
+        <p><a class="btn btn-lg btn-success" href="/" role="button">Sign the fuck out</a></p>
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-4">
+          <h4>Add Product</h4>
+          {{new-product saveProduct="saveProduct"}}
+        </div>
+
+        <div class="col-lg-4">
+          <h4>Update Product</h4>
+          {{product-update products=model updateProduct='updateProduct'}}
+
+        </div>
+        <div class="col-lg-4">
+          <h4>Delete Product</h4>
+          {{delete-product products=model delete='delete'}}
+        </div>
+      </div>
+
+
+
+    </div> <!-- /container -->

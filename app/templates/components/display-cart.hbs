@@ -1,0 +1,17 @@
+<div class="cartItem">
+  {{#each shoppingCart.items as |item|}}
+  <p>
+    {{item.title}}: ${{item.cost}}
+  </p>
+
+  {{/each}}
+
+  <p>
+
+    <button {{action 'getTotal'}}>Total</button>
+  </p>
+  <p>
+    {{productTotal}}
+  </p>
+
+</div>

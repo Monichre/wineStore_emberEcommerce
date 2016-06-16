@@ -1,0 +1,16 @@
+
+
+{{#if needToDelete}}
+  <div class="delete-product-list">
+    {{#each allFoundProducts as |product|}}
+      <p><span>{{product.title}}</span>{{input type='checkbox' checked=false val=product}}</p>
+    {{/each}}
+  </div>
+  <button {{action 'delete' products}}>Delete</button>
+{{else}}
+<form>
+  <label for="name">Product Name</label><br>
+  {{input value=name id="productDeleteName"}}<br>
+  <button {{action 'findDeleteProduct' products}}>Find Product</button>
+</form>
+{{/if}}
